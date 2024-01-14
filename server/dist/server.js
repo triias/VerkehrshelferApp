@@ -58,7 +58,7 @@ app.listen(port, function () {
     password: process.env.DATABASE_PASSWORD,
     database: process.env.DATABASE_NAME,
     synchronize: true,
-    logging: true,
+    logging: false,
     entities: ["dist/entity/**/*.js"],
     migrations: ["dist/migration/**/*.js"],
     subscribers: ["dist/subscriber/**/*.js"],
